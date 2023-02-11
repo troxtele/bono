@@ -22,12 +22,14 @@
     ></script>
   </head>
 
-  <body class="h-full">
+  <body class="h-full bg-[#F9F5EA]">
     <div class="swiper-container h-full w-full">
       <div class="swiper-wrapper">
-        <div class="swiper-slide">
+        <div class="swiper-slide relative">
           <!-- navbar -->
-          <div class="wrapper max-w-screen-xl">
+          <div
+            class="wrapper max-w-screen-xl bg-[#F9F5EA] absolute left-0 right-0 top-0"
+          >
             <!-- mobile nav bar -->
             <nav class="backdrop-blur-sm">
               <div class="sm:hidden flex justify-between p-2">
@@ -93,6 +95,34 @@
           </div>
           <!-- index page-->
           <section class="main relative overflow-hidden">
+            <!-- Cloudes -->
+            <div class="cloudes">
+              <div class="cloude_left absolute top-[20%] left-32">
+                <img
+                  class="w-[30rem] -translate-x-[100%] duration-[1200ms] opacity-0 animate bg-red-700"
+                  src="./assets/images/index/cloud-left.png"
+                  alt=""
+                />
+              </div>
+              <div
+                class="cloude_middle absolute top-[25%] left-1/2 transfom -translate-x-1/2"
+              >
+                <img
+                  class="w-[30rem] -translate-y-[100%] bg-green-700 duration-[1200ms] opacity-0 animate"
+                  src="./assets/images/index/cloud-static.png"
+                  alt=""
+                />
+              </div>
+              <div
+                class="cloude_right absolute top-[20%] right-32 translate-x-[100%] duration-[1200ms] opacity-0 animate bg-blue-400"
+              >
+                <img
+                  class="w-[30rem]"
+                  src="./assets/images/index/cloud-right.png"
+                  alt=""
+                />
+              </div>
+            </div>
             <div class="container">
               <div class="wrapper flex justify-center items-center">
                 <!-- mountains -->
@@ -105,7 +135,7 @@
                 </div>
                 <!-- content -->
                 <div
-                  class="content h-full w-full flex flex-col justify-end items-center gap-16 absolute bottom-[20%] text-center"
+                  class="content h-full w-full flex flex-col justify-end items-center gap-16 absolute bottom-[45%] md:bottom-[20%] text-center"
                 >
                   <!-- Header -->
                   <h1
@@ -121,7 +151,7 @@
                     <!-- btn -->
                     <a
                       href="#"
-                      class="flex justify-center items-center -translate-x-[100%] gap-4 md:gap-8 backdrop-blur-2xl transition hover:bg-tan hover:border-tan bg-white/30 rounded-full border border-white px-6 py-2 animate opacity-0 duration-[1200ms]"
+                      class="flex justify-center items-center -translate-x-[100%] md:gap-8 backdrop-blur-2xl transition hover:bg-tan hover:border-tan bg-white/30 rounded-full border border-white px-6 py-2 animate opacity-0 duration-[1200ms]"
                     >
                       <div class="logo">
                         <img
@@ -156,15 +186,16 @@
             </div>
           </section>
         </div>
-        <div
-          class="swiper-slide bg-[url('./assets/images/inside/bg-banner.png')] bg-cover bg-no-repeat"
-        >
+        <!-- Inner page -->
+        <div class="swiper-slide">
           <!-- inside page-->
-          <section class="wrapper w-full">
+          <section
+            class="wrapper w-full bg-[url('./assets/images/inside/bg-banner.png')] bg-cover bg-no-repeat"
+          >
             <!-- mockup -->
             <!-- mockup top-left -->
             <div
-              class="absolute w-[13rem] left-10 top-4 left_bottle duration-[1200ms] opacity-0 -translate-y-[100%]"
+              class="absolute w-[6rem] xs:w-[8rem] sm:w-[10rem] lg:w-[13rem] -left-5 xs:left-0 sm:left-5 lg:left-10 top-4 left_bottle duration-[1200ms] opacity-0 -translate-y-[100%]"
             >
               <img
                 class="h-full w-full object-contain"
@@ -174,7 +205,7 @@
             <!-- mockup top-left -->
             <!-- mockup top-right -->
             <div
-              class="absolute w-[13rem] right-10 top-4 right_bottle duration-[1200ms] opacity-0 translate-x-[100%]"
+              class="absolute w-[6rem] xs:w-[8rem] sm:w-[10rem] lg:w-[13rem] -right-5 xs:right-0 sm:right-5 lg:right-10 top-4 right_bottle duration-[1200ms] opacity-0 translate-x-[100%]"
             >
               <img
                 class="h-full w-full object-contain"
@@ -187,7 +218,7 @@
             <!-- Bottom Bottles -->
             <!-- left -->
             <div
-              class="absolute w-[13rem] left-10 -bottom-20 right_bottle duration-[1200ms] opacity-0 -translate-x-[100%]"
+              class="absolute w-[5rem] xs:w-[6rem] sm:w-[7rem] md:w-[10rem] xl:w-[13rem] left-0 xs:left-3 -bottom-20 right_bottle duration-[1200ms] opacity-0 -translate-x-[100%]"
             >
               <img
                 class="h-full w-full object-contain"
@@ -196,7 +227,7 @@
             </div>
             <!-- right -->
             <div
-              class="absolute w-[24rem] right-10 -bottom-20 right_bottle duration-[1200ms] opacity-0 translate-y-[100%]"
+              class="absolute w-[8rem] xs:w-[10rem] sm:w-[13rem] md:w-[18rem] xl:w-[24rem] right-0 xs:right-5 sm:right-10 -bottom-14 md:-bottom-20 right_bottle duration-[1200ms] opacity-0 translate-y-[100%]"
             >
               <img
                 class="h-full w-full object-contain"
@@ -208,7 +239,7 @@
 
             <!-- content -->
             <div
-              class="content h-full w-full flex flex-col justify-end items-center gap-16 absolute bottom-[20%] text-center"
+              class="content h-full w-full flex flex-col justify-end items-center gap-8 sm:gap-10 md:gap-14 absolute bottom-[20%] text-center"
             >
               <!-- Header -->
               <h2
@@ -218,7 +249,7 @@
                 only science.
               </h2>
               <p
-                class="font-semibold font-archivo text-center text-lg max-w-[40rem] animate -translate-x-[50%] transition duration-[1300ms] animate opacity-0"
+                class="font-semibold font-archivo text-center text-lg max-w-[70%] transition duration-[1300ms] animate -translate-x-[100%] opacity-0"
               >
                 All of our medications are registered and prescribed by licensed
                 doctors. 100% online and delivered discreetly.
@@ -247,9 +278,9 @@
           </section>
           <!-- inside page-->
         </div>
-        <div class="swiper-slide">
+        <div class="swiper-slide overflow-hidden">
           <!-- Quiz Section -->
-          <section class="z-30 w-full py-24">
+          <section class="z-30 w-full py-16">
             <div class="container">
               <div
                 class="wrapper h-full flex flex-col md:flex-row justify-between items-center gap-6"
@@ -283,337 +314,6 @@
               </div>
             </div>
           </section>
-        </div>
-
-        <div class="swiper-slide">
-          <!-- Product Section -->
-          <section
-            class="product bg-[url('./assets/images/product/bg-banner.png')] bg-cover bg-no-repeat bg-center pt-20"
-          >
-            <div class="container">
-              <div class="wrapper grid justify-center items-center gap-32">
-                <!-- top -->
-                <div
-                  class="top flex justify-center flex-col items-center gap-12"
-                >
-                  <h2
-                    class="text-5xl sm:text-6xl lg:text-7xl font-bold font-clashdisplay text-primary capitalize"
-                  >
-                    Our product
-                  </h2>
-
-                  <!-- btns -->
-                  <div
-                    class="btns flex flex-wrap justify-center gap-5 md:gap-10"
-                  >
-                    <a
-                      href="#"
-                      class="btn hover:bg-tan hover:border-tan border border-white transition duration-300 backdrop-blur-xl bg-white/30 rounded-full px-10 md:px-16 py-3 capitalize text-base font-semibold"
-                    >
-                      best seller
-                    </a>
-                    <a
-                      href="#"
-                      class="btn hover:bg-tan hover:border-tan border border-white transition duration-300 backdrop-blur-xl bg-white/30 rounded-full px-10 md:px-16 py-3 capitalize text-base font-semibold"
-                    >
-                      new arrival
-                    </a>
-                    <a
-                      href="#"
-                      class="btn hover:bg-tan hover:border-tan border border-white transition duration-300 backdrop-blur-xl bg-white/30 rounded-full px-10 md:px-16 py-3 capitalize text-base font-semibold"
-                    >
-                      see all
-                    </a>
-                  </div>
-                </div>
-                <!-- Bottom -->
-                <div class="bottom pb-10 sm:pb-12 md:pb-16">
-                  <div
-                    class="carts text-primary grid md:grid-cols-2 lg:grid-cols-3 justify-center gap-y-20 gap-x-10 font-clashdisplay font-semibold"
-                  >
-                    <div
-                      class="cart bg-tan rounded-3xl p-4 flex justify-center gap-2 md:max-w-[346px]"
-                    >
-                      <div class="texts">
-                        <h4 class="text-2xl max-w-[15rem]">
-                          Moisturizing Clean Hands
-                        </h4>
-                        <div class="price flex mt-4">
-                          <div class="uppercase font-semibold flex text-xl">
-                            rm
-                          </div>
-                          <div class="num text-bold text-6xl">88.00</div>
-                        </div>
-                      </div>
-                      <img
-                        class="-mt-14"
-                        src="./assets/images/product/item-1.png"
-                        alt=""
-                      />
-                    </div>
-                    <div
-                      class="cart bg-tan rounded-3xl p-4 flex justify-center gap-2 md:max-w-[346px]"
-                    >
-                      <div class="texts">
-                        <h4 class="text-2xl max-w-[15rem]">
-                          Miraculous Spot Treatment
-                        </h4>
-                        <div class="price flex mt-4">
-                          <div class="uppercase font-semibold flex text-xl">
-                            rm
-                          </div>
-                          <div class="num text-bold text-6xl">72.00</div>
-                        </div>
-                      </div>
-                      <img
-                        class="-mt-14"
-                        src="./assets/images/product/item-2.png"
-                        alt=""
-                      />
-                    </div>
-                    <div
-                      class="cart bg-tan rounded-3xl p-4 flex justify-center gap-2 md:max-w-[346px]"
-                    >
-                      <div class="texts">
-                        <h4 class="text-2xl max-w-[15rem]">
-                          Carrot Seed Serum
-                        </h4>
-                        <div class="price flex my-4">
-                          <div class="uppercase font-semibold flex text-xl">
-                            rm
-                          </div>
-                          <div class="num text-bold text-6xl">50.00</div>
-                        </div>
-                      </div>
-                      <img
-                        class="-mt-14"
-                        src="./assets/images/product/item-3.png"
-                        alt=""
-                      />
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-        </div>
-        <div class="swiper-slide">
-          <!-- Blog Section -->
-          <section class="text-center pt-20">
-            <div class="container">
-              <div class="wrapper flex flex-col gap-16">
-                <!-- Top -->
-                <div
-                  class="top flex flex-col justify-center items-center gap-8"
-                >
-                  <!-- heading -->
-                  <h2
-                    class="text-5xl sm:text-6xl lg:text-7xl font-bold font-clashdisplay text-primary"
-                  >
-                    Knowledge is power
-                  </h2>
-                  <!-- para -->
-                  <p
-                    class="text-slate-900 max-w-[35rem] text-base font-semibold"
-                  >
-                    Get latest articles for healthcare, tips and knowledge about
-                    personal care. Everything is crafted by our experienced team
-                    and panel doctors.
-                  </p>
-                </div>
-                <!-- Botton -->
-                <div class="bottom">
-                  <!-- items -->
-                  <div
-                    class="items text-start grid justify-between sm:grid-cols-2 lg:grid-cols-3 gap-6"
-                  >
-                    <!-- item -->
-                    <div class="item grid gap-5">
-                      <img
-                        class=""
-                        src="./assets/images/blog/blog-1.png"
-                        alt=""
-                      />
-                      <div class="texts flex flex-col gap-4">
-                        <a href="#" class="text-2xl font-bold text-primary"
-                          >Fire Up Your Motivation</a
-                        >
-                        <p class="text-stone-500 max-w-[25rem] font-normal">
-                          Lorem ipsum dolor sit amet, consectetuer adipiscing
-                          elit. Integer in sapien. Nullam dapibus fermentum
-                          ipsum. Class aptent taciti sociosqu.
-                        </p>
-                        <div class="name">
-                          <a href="#" class="text-xl text-primary font-semibold"
-                            >dr. muhamad reze</a
-                          >
-                          <div class="date text-stone-500">10th Oct 2022</div>
-                        </div>
-                      </div>
-                    </div>
-                    <!-- item -->
-                    <div class="item grid gap-5">
-                      <img
-                        class=""
-                        src="./assets/images/blog/blog-2.png"
-                        alt=""
-                      />
-                      <div class="texts flex flex-col gap-4">
-                        <a href="#" class="text-2xl font-bold text-primary"
-                          >Fire Up Your Motivation</a
-                        >
-                        <p class="text-stone-500 max-w-[25rem] font-normal">
-                          Lorem ipsum dolor sit amet, consectetuer adipiscing
-                          elit. Integer in sapien. Nullam dapibus fermentum
-                          ipsum. Class aptent taciti sociosqu.
-                        </p>
-                        <div class="name">
-                          <a href="#" class="text-xl text-primary font-semibold"
-                            >dr. muhamad reze</a
-                          >
-                          <div class="date text-stone-500">10th Oct 2022</div>
-                        </div>
-                      </div>
-                    </div>
-                    <!-- item -->
-                    <div class="item grid gap-5">
-                      <img
-                        class=""
-                        src="./assets/images/blog/blog-3.png"
-                        alt=""
-                      />
-                      <div class="texts flex flex-col gap-4">
-                        <a href="#" class="text-2xl font-bold text-primary"
-                          >Fire Up Your Motivation</a
-                        >
-                        <p class="text-stone-500 max-w-[25rem] font-normal">
-                          Lorem ipsum dolor sit amet, consectetuer adipiscing
-                          elit. Integer in sapien. Nullam dapibus fermentum
-                          ipsum. Class aptent taciti sociosqu.
-                        </p>
-                        <div class="name">
-                          <a href="#" class="text-xl text-primary font-semibold"
-                            >dr. muhamad reze</a
-                          >
-                          <div class="date text-stone-500">10th Oct 2022</div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- view all -->
-                  <a
-                    href="#"
-                    class="flex gap-4 text-primary font-semibold mt-16 text-xl justify-center"
-                  >
-                    View more article
-                    <span><i class="fa-solid fa-arrow-right"></i></span
-                  ></a>
-                </div>
-              </div>
-            </div>
-          </section>
-        </div>
-        <div class="swiper-slide">
-          <!-- Subscribe Section -->
-          <section>
-            <div class="container">
-              <div
-                class="wrapper flex flex-col sm:flex-row justify-between gap-6 items-center"
-              >
-                <!-- left -->
-                <div class="left">
-                  <h2
-                    class="text-4xl sm:text-5xl lg:text-6xl font-bold max-w-[26rem] font-clashdisplay"
-                  >
-                    Subscribe to our newsletter
-                  </h2>
-                </div>
-                <!-- Right -->
-                <div class="right w-full max-w-[25rem] md:mr-24">
-                  <form>
-                    <label
-                      for="search"
-                      class="mb-2 text-sm font-medium text-gray-900 sr-only"
-                      >Search</label
-                    >
-                    <div class="relative">
-                      <div
-                        class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none"
-                      ></div>
-                      <input
-                        type="search"
-                        class="block w-full p-4 pl-10 text-sm text-gray-900 border border-gray-300 rounded-full bg-gray-50"
-                        placeholder="Your email address"
-                        required
-                      />
-                      <button
-                        type="submit"
-                        class="absolute z-20 text-white right-2.5 bottom-2.5 bg-btn bg-[#11373A] transition duration-300 focus:ring-2 font-medium rounded-full text-sm px-4 py-2"
-                      >
-                        Subscribe
-                      </button>
-                    </div>
-                  </form>
-                </div>
-              </div>
-            </div>
-          </section>
-          <!-- Footer -->
-          <footer class="py-16">
-            <div class="container">
-              <div
-                class="wrapper flex flex-col justify-center items-center border-b border-gray-400/50"
-              >
-                <!-- Top -->
-                <div
-                  class="top w-full flex sm:block justify-center max-w-[50rem]"
-                >
-                  <ul
-                    class="flex justify-center sm:justify-around gap-7 flex-wrap"
-                  >
-                    <li>
-                      <a href="#" class="font-semibold capitalize">Shop</a>
-                    </li>
-                    <li>
-                      <a href="#" class="font-semibold capitalize">inside</a>
-                    </li>
-                    <li>
-                      <a href="#" class="font-semibold capitalize">take quiz</a>
-                    </li>
-                    <li>
-                      <a href="#" class="font-semibold capitalize">our story</a>
-                    </li>
-                    <li>
-                      <a href="#" class="font-semibold capitalize">blog</a>
-                    </li>
-                    <li>
-                      <a href="#" class="font-semibold capitalize">cart</a>
-                    </li>
-                  </ul>
-                </div>
-                <!-- content -->
-                <div
-                  class="content py-10 flex flex-col justify-center gap-6 items-center"
-                >
-                  <!-- logo -->
-                  <img
-                    class="max-w-[10rem]"
-                    src="./assets/images/index/logo_bonobo.png"
-                    alt=""
-                  />
-                  <p class="text-stone-500 max-w-[25rem] font-normal">
-                    Lorem ipsum dolor sit amet
-                  </p>
-                </div>
-              </div>
-            </div>
-            <!-- Copyright -->
-            <div class="container mt-10 flex justify-center">
-              <p class="text-stone-500 max-w-[25rem] font-normal">
-                Copyright © 2023 Bonobo, All right reserved.
-              </p>
-            </div>
-          </footer>
         </div>
       </div>
     </div>
